@@ -1,0 +1,36 @@
+
+<section>
+  <h2>Citas Similares</h2>
+
+
+<input
+  type="text"
+  placeholder="Ingresa tu nombre"
+  [(ngModel)]="nombre">
+
+<input
+  type="text"
+  placeholder="Ingresa tu apellido"
+  [(ngModel)]="apellido">
+
+<input
+  type="date"
+  [(ngModel)]="fecha">
+
+<input
+  type="time"
+  [(ngModel)]="hora">
+
+  <app-btn-component
+    label="Agendar"
+    type="primary"
+    (clickBtn)="agendarCita()">
+  </app-btn-component>
+
+<app-toast-component
+  [message]="toastMessage"
+  [type]="toastType"
+  [visible]="showToast">
+</app-toast-component>
+
+
